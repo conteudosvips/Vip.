@@ -1,95 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conteúdo Exclusivo +18</title>
+  <title>PrivadoDasVips</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #fff;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1602453224154-98fe5b582d1b?auto=format&fit=crop&w=1400&q=80');
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 20px;
-      overflow: hidden;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+      overflow-x: hidden;
     }
+
     .container {
-      background: rgba(20, 0, 20, 0.6);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 0 30px rgba(200, 0, 50, 0.6);
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      padding: 2.5rem 1.8rem;
       max-width: 500px;
-      animation: fadeIn 2s ease-in-out;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
     }
+
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 15px;
-      color: #cc001a;
-      animation: pulse 2s infinite;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.5rem;
+      color: #ff1a1a;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 6px #ff1a1a;
     }
+
     p {
       font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 25px;
+      color: #d6d6d6;
+      margin-bottom: 2rem;
+      line-height: 1.5;
     }
-    a.button {
-      display: inline-block;
-      background: #cc001a;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 12px;
+
+    .notificacao {
+      background: #ff1a1a;
+      color: white;
+      font-weight: bold;
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
       font-size: 1rem;
-      transition: background 0.3s ease, transform 0.3s ease;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      animation: pulse 2s infinite;
+      text-shadow: 0 0 10px #fff;
     }
-    a.button:hover {
-      background: #b30016;
+
+    .botao {
+      display: inline-block;
+      background-color: #ff1a1a;
+      color: #fff;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 12px #ff1a1a;
+    }
+
+    .botao:hover {
+      background-color: #cc0000;
       transform: scale(1.05);
     }
-    .notificacao {
-      background: rgba(200, 0, 50, 0.9);
-      padding: 10px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      font-weight: bold;
-      animation: blink 1.5s infinite;
+
+    .emoji-bounce {
+      animation: bounce 1.5s infinite;
+      display: inline-block;
+      margin-right: 0.4rem;
     }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
+
+    .frase-destaque {
+      font-size: 1rem;
+      color: #ff4d4d;
+      margin-top: 1rem;
+      font-style: italic;
+      animation: piscar 1.8s infinite;
     }
-    @keyframes pulse {
-      0% { text-shadow: 0 0 5px #cc001a; }
-      50% { text-shadow: 0 0 20px #cc001a; }
-      100% { text-shadow: 0 0 5px #cc001a; }
-    }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 10px #ff1a1a, 0 0 20px #cc0000; }
+      50% { box-shadow: 0 0 20px #ff1a1a, 0 0 30px #ff1a1a; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes piscar {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+      .botao { padding: 0.9rem 2rem; font-size: 1rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="notificacao">Novas garotas estão AO VIVO agora…</div>
-    <h1>Conteúdo proibido, acesso liberado</h1>
-    <p>
-      Uma seleção das garotas mais ousadas da internet, postando o que as redes não permitem.<br>
-      Tudo em um só lugar, sem censura, sem enrolação.
-    </p>
-    <p>
-      Se você chegou aqui, não foi por acaso. Quem entra, não volta atrás.<br>
-      Clique e descubra o que está fazendo centenas de homens ficarem viciados todos os dias.
-    </p>
-    <a class="button" href="https://conteudosvips.github.io/Conte-dos-/">Entrar Agora</a>
+    <div class="notificacao"><span class="emoji-bounce">🔥</span> Novas garotas estão AO VIVO agora!</div>
+    <h1>Bem-vindo ao PrivadoDasVips</h1>
+    <p>Você acaba de entrar no universo onde o prazer é prioridade. Acesso imediato aos conteúdos mais quentes e exclusivos das garotas que estão dominando as redes secretas.</p>
+    <a class="botao" href="https://conteudosvips.github.io/Conte-dos-/" target="_blank">Entrar Agora</a>
+    <div class="frase-destaque">Atualizações em tempo real, novidades quentes todos os dias!</div>
   </div>
 </body>
 </html>
